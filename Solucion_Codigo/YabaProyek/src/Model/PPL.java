@@ -15,7 +15,7 @@ public class PPL implements Serializable {
     private ArrayList<Delito> delitos;
     private LocalDateTime fechaIngreso;
     int diasVisitaPermitidos;
-    int diasCondena;
+    int diasCondena = 0;
     
     
     public PPL(String nombre, ArrayList<Delito> delitos, LocalDateTime fechaIngreso, int diasVisita) {
@@ -23,19 +23,21 @@ public class PPL implements Serializable {
         this.delitos = delitos;
         this.fechaIngreso = fechaIngreso;
         diasVisitaPermitidos = 6; //Por defecto, tiene derecho a 6 días de visita por semana
-
+        inicializarCaracteristicas();
     }
     
     //Metodo que inicializa los dias de visita y el tiempo de condena basado en los delitos cometidos.
     private void inicializarCaracteristicas(){
         for(Delito delito : delitos){
             
-            if(delito.getGravedad().equalsIgnoreCase("Alta")){
-                
+            if(delito.getGravedad().equalsIgnoreCase("Alta")) {
+                diasVisitaPermitidos -= 2;
+                diasCondena += 1000;
             }else if(delito.getGravedad().equalsIgnoreCase("Media")){
-                
+                diasVisitaPermitidos--;
+                diasCondena += 365;
             }else{
-                
+                diasCondena += 100;
             }
             
         }
@@ -45,27 +47,41 @@ public class PPL implements Serializable {
     public String toString() {
         return "PPL: " + nombre + " ingresó en: " + fechaIngreso + " tiene los delitos de: " + delitos.toString();
     }
+    
+    public void agregarDelito(Delito delito){
+        delitos.add(delito);
+        inicializarCaracteristicas();
+    }
 
     /*
     Los castigos se aplican de acuerdo a su nivel de gravedad:
-    Gravedad 1: Nivel bajo, se resta 1 día de visita por semana
-    Gravedad 2: Nivel moderado, se restan 3 días de visita por semana
-    Gravedad 3: Nivel alto, se le prohiben los días de visita totales. 
+    Gravedad 1: Nivel bajo, se resta 1 día de visita por semana y se agregan +30 dias de condena.
+    Gravedad 2: Nivel moderado, se restan 3 días de visita por semana y se agregan + 365 dias de condena
+    Gravedad 3: Nivel alto, se le prohiben los días de visita totales y se agregan +1000 días de condena
      */
     public void aplicarCastigo(int gravedad) {
         switch (gravedad) {
-            case 1:
+            case 1 -> {
                 diasVisitaPermitidos--;
-                break;
-            case 2:
+                diasCondena += 30;
+            }
+            case 2 -> {
                 diasVisitaPermitidos -= 3;
-                break;
-            case 3:
+                diasCondena += 365;
+            }
+            case 3 -> {
                 diasVisitaPermitidos -= diasVisitaPermitidos;
-                break;
-            default:
+                diasCondena += 1000;
+            }
+            default -> {
+            }
              
         }
     }
+
+    public ArrayList<Delito> getDelitos() {
+        return delitos;
+    }
+    
 
 }
