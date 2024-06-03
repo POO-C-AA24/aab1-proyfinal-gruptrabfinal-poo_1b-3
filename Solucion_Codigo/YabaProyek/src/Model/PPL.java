@@ -82,6 +82,11 @@ public class PPL implements Serializable {
     public ArrayList<Delito> getDelitos() {
         return delitos;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
     
 
 }

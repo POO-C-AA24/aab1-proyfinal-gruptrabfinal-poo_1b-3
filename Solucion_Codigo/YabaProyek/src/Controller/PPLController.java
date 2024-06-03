@@ -1,6 +1,7 @@
 
 package Controller;
 
+import Model.EstadisticasPPL;
 import Model.PPL;
 import Model.PPLDatabase;
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class PPLController {
                 2. Agregar nuevo PPL 
                 3. Eliminar PPL 
                 4. Busqueda de PPLs
-                   
+                5. Generar PPLs activos en .txt    
                 """;
                 
                 
@@ -36,6 +37,10 @@ public class PPLController {
      public void escribirPPL(ArrayList<PPL> ppl){
         database.escribirPPL(ppl);
     }
+     
+     public EstadisticasPPL buscador(ArrayList<PPL> ppl){
+         return new EstadisticasPPL(ppl);
+     }
     
     
 }

@@ -71,5 +71,19 @@ public class EstadisticasPPL {
         }
         return resultadosPPL;
     }
+    /*
+    Devuelve un PPL específico por nombre
+    */
+    
+      public PPL getPresoPorNombre(String nombrePPL) {
+        for (PPL ppl : arrayPPL) {
+
+                if (ppl.getNombre().equalsIgnoreCase(nombrePPL)) {
+                    
+                    return ppl;
+                }
+        }
+        return null; //EN CASO DE NO EXISTIR RETORNAR VALOR NULO
+    }
 
 }
