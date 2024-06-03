@@ -18,7 +18,7 @@ public class PPL implements Serializable {
     int diasCondena = 0;
     
     
-    public PPL(String nombre, ArrayList<Delito> delitos, LocalDateTime fechaIngreso, int diasVisita) {
+    public PPL(String nombre, ArrayList<Delito> delitos, LocalDateTime fechaIngreso) {
         this.nombre = nombre;
         this.delitos = delitos;
         this.fechaIngreso = fechaIngreso;
