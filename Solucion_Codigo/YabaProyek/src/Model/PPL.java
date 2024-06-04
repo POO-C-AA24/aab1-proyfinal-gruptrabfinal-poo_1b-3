@@ -50,7 +50,7 @@ public class PPL implements Serializable {
     
     public void agregarDelito(Delito delito){
         delitos.add(delito);
-        inicializarCaracteristicas();
+       // inicializarCaracteristicas();
     }
 
     /*

@@ -21,7 +21,9 @@ public class PPLController {
                 2. Agregar nuevo PPL 
                 3. Eliminar PPL 
                 4. Busqueda de PPLs
-                5. Generar PPLs activos en .txt    
+                5. Agregar/Eliminar delito a PPL
+                6. Aplicar agravante a PPL
+                7. Generar PPLs activos en .txt    
                 """;
                 
                 
