@@ -1,0 +1,3 @@
+PPL: Juan no borrar ingresó en: 2024-06-04T16:53:07.701824100 tiene condena de: 100 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Homicidio] con gravedad: [Baja]--]
+PPL: Carlos ingresó en: 2024-06-04T18:23:26.142028900 tiene condena de: 200 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Homicidio] con gravedad: [Nula]--, --[Tostar] con gravedad: [Sapo]--]
+PPL: Juan  ingresó en: 2024-06-04T19:41:06.674887400 tiene condena de: 2365 dias y derecho a 1 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Alta]--, --[Asalto] con gravedad: [Alta]--, --[Accidente vehicular] con gravedad: [Media]--]

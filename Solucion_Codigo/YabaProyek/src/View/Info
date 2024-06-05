@@ -1,1 +1,2 @@
-Aqui va todo lo de salida y entrada con System.out.print y la clase Scanner 
+El paquete view controla la experiencia de usuario.
+Es la clase que recibe datos del usuario y los almacena de manera perminente en el sistema

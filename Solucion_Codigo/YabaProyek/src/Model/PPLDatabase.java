@@ -1,8 +1,11 @@
 
 package Model;
 
+import Controller.PPL;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -14,14 +17,17 @@ import java.util.ArrayList;
  */
 public class PPLDatabase {
     private static final String RUTA_PPL = "files/privados_libertad.dat";
+    private static final String RUTA_PPL_TXT = "files/privados_libertad_texto.txt";
     
-    public void escribirPPL(ArrayList<PPL> arregloPPL){
+    public boolean escribirPPL(ArrayList<PPL> arregloPPL){
         try{
             ObjectOutputStream escritor = new ObjectOutputStream(new FileOutputStream(RUTA_PPL));
             escritor.writeObject(arregloPPL);
             escritor.close();
+            return true;
         }catch(IOException e){
             System.out.println("ERROR AL GUARDAR " + e);
+            return false;
         }
     }
     
@@ -39,4 +45,23 @@ public class PPLDatabase {
             return new ArrayList<PPL>();
         }
     }
+    
+    public boolean escribirTXT(ArrayList<PPL> arregloPPL){
+        try{
+            BufferedWriter writer = new BufferedWriter(new FileWriter(RUTA_PPL_TXT));
+            for(PPL ppl : arregloPPL){
+                writer.write(ppl.toString());
+                writer.newLine();
+            }
+            writer.close();
+            return true;
+            
+        }catch(Exception e){
+            System.out.println("Error al escribir el archivo TXT " + e);
+            return false;
+        }
+    }
+    
+    
+  
 }

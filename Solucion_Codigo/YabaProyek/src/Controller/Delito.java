@@ -1,5 +1,5 @@
 
-package Model;
+package Controller;
 
 import java.io.Serializable;
 
@@ -13,8 +13,8 @@ public class Delito implements Serializable{
     private String delito, gravedad;
 
     public Delito(String delito, String gravedad) {
-        this.delito = delito;
-        this.gravedad = gravedad;
+        this.delito = delito.trim();
+        this.gravedad = gravedad.trim();
     }
 
     public String getDelito() {
@@ -36,6 +36,6 @@ public class Delito implements Serializable{
     
     @Override
     public String toString(){
-        return "Delito: " + delito + " con gravedad: " + gravedad;
+        return "--[" + delito + "] con gravedad: [" + gravedad + "]--";
     }
 }

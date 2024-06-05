@@ -1,8 +1,6 @@
 
 package Controller;
 
-import Model.EstadisticasPPL;
-import Model.PPL;
 import Model.PPLDatabase;
 import java.util.ArrayList;
 
@@ -11,7 +9,7 @@ import java.util.ArrayList;
  * @author Carlos & Cody.
  */
 
-//Esta clase sirve de puente intermedio entre la clase main de ejecucion y la clase model. 
+//Esta clase sirve de puente intermedio entre la clase main de ejecucion y la base de datos. 
 public class PPLController {
     private static PPLDatabase database = new PPLDatabase();
     public String mostrarMenu(){
@@ -24,6 +22,7 @@ public class PPLController {
                 5. Agregar/Eliminar delito a PPL
                 6. Aplicar agravante a PPL
                 7. Generar PPLs activos en .txt    
+                8. Salir.
                 """;
                 
                 
@@ -36,9 +35,13 @@ public class PPLController {
         return database.leerPPL();
     }
     
-     public void escribirPPL(ArrayList<PPL> ppl){
-        database.escribirPPL(ppl);
+     public boolean escribirPPL(ArrayList<PPL> ppl){
+        return database.escribirPPL(ppl);
     }
+     
+     public boolean escribirTXT(ArrayList<PPL> ppl){
+         return database.escribirTXT(ppl);
+     }
      
      public EstadisticasPPL buscador(ArrayList<PPL> ppl){
          return new EstadisticasPPL(ppl);

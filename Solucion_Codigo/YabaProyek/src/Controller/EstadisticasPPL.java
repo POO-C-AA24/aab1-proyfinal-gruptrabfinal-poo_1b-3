@@ -1,5 +1,6 @@
-package Model;
+package Controller;
 
+import Controller.Delito;
 import java.util.ArrayList;
 
 /**
@@ -71,19 +72,64 @@ public class EstadisticasPPL {
         }
         return resultadosPPL;
     }
+
+    /*
+     Devuelve la cantidad de presos que tengan n numero de visitas permitidas (0 - 7)
+     */
+    public ArrayList<PPL> getPresosPorNumeroVisitas(int visitasSemanales) {
+        ArrayList<PPL> resultadosPPL = new ArrayList<>();
+
+        for (PPL ppl : arrayPPL) {
+            if (ppl.getDiasVisitaPermitidos() == visitasSemanales) {
+                resultadosPPL.add(ppl);
+            }
+
+        }
+        return resultadosPPL;
+    }
+
+    /*
+     Devuelve la cantidad de presos que superen n numero de dias de condena
+     */
+    public ArrayList<PPL> getPresosPorDiasCondena(int diasCondena) {
+        ArrayList<PPL> resultadosPPL = new ArrayList<>();
+
+        for (PPL ppl : arrayPPL) {
+            if (ppl.getDiasCondena() == diasCondena) {
+                resultadosPPL.add(ppl);
+            }
+
+        }
+        return resultadosPPL;
+    }
+
     /*
     Devuelve un PPL específico por nombre
-    */
-    
-      public PPL getPresoPorNombre(String nombrePPL) {
+     */
+    public PPL getPresoPorNombre(String nombrePPL) {
         for (PPL ppl : arrayPPL) {
 
-                if (ppl.getNombre().equalsIgnoreCase(nombrePPL)) {
-                    
-                    return ppl;
-                }
+            if (ppl.getNombre().equalsIgnoreCase(nombrePPL)) {
+
+                return ppl;
+            }
         }
         return null; //EN CASO DE NO EXISTIR RETORNAR VALOR NULO
+    }
+
+    /*
+    Devuelve el numero de delitos cometidos por los PPL que existen en el momento dado.
+    
+     */
+
+    public int getDelitosTotales() {
+        int delitos = 0;
+        for (PPL ppl : arrayPPL) {
+
+            delitos += ppl.getDelitos().size();
+
+        }
+        return delitos;
     }
 
 }
