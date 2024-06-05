@@ -95,7 +95,7 @@ public class EstadisticasPPL {
         ArrayList<PPL> resultadosPPL = new ArrayList<>();
 
         for (PPL ppl : arrayPPL) {
-            if (ppl.getDiasCondena() == diasCondena) {
+            if (ppl.getDiasCondena() >= diasCondena) {
                 resultadosPPL.add(ppl);
             }
 
@@ -104,24 +104,23 @@ public class EstadisticasPPL {
     }
 
     /*
-    Devuelve un PPL específico por nombre
+    Devuelve PPL específico por nombre. Si existen 2 o mas con el mismo nombre, se devolverán igualmente.
      */
-    public PPL getPresoPorNombre(String nombrePPL) {
+    public ArrayList<PPL> getPresosPorNombre(String nombrePPL) {
+        ArrayList<PPL> resultadosPPL = new ArrayList<>();
         for (PPL ppl : arrayPPL) {
 
             if (ppl.getNombre().equalsIgnoreCase(nombrePPL)) {
-
-                return ppl;
+                   resultadosPPL.add(ppl);
             }
         }
-        return null; //EN CASO DE NO EXISTIR RETORNAR VALOR NULO
+        return resultadosPPL;
     }
 
     /*
     Devuelve el numero de delitos cometidos por los PPL que existen en el momento dado.
     
      */
-
     public int getDelitosTotales() {
         int delitos = 0;
         for (PPL ppl : arrayPPL) {

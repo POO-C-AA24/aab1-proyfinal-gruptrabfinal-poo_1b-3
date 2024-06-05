@@ -1,3 +1,98 @@
-PPL: Juan no borrar ingresó en: 2024-06-04T16:53:07.701824100 tiene condena de: 100 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Homicidio] con gravedad: [Baja]--]
-PPL: Carlos ingresó en: 2024-06-04T18:23:26.142028900 tiene condena de: 200 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Homicidio] con gravedad: [Nula]--, --[Tostar] con gravedad: [Sapo]--]
-PPL: Juan  ingresó en: 2024-06-04T19:41:06.674887400 tiene condena de: 2365 dias y derecho a 1 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Alta]--, --[Asalto] con gravedad: [Alta]--, --[Accidente vehicular] con gravedad: [Media]--]
+PPL: Juan1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--]
+
+PPL: Maria1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Alta]--, --[Fraude] con gravedad: [Media]--]
+
+PPL: Pedro1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1000 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--]
+
+PPL: Luisa1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Estafa] con gravedad: [Baja]--, --[Hurto] con gravedad: [Media]--]
+
+PPL: Carlos1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Ana1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Media]--]
+
+PPL: Miguel1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Sofia1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--, --[Estafa] con gravedad: [Baja]--]
+
+PPL: Jorge1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Baja]--, --[Robo] con gravedad: [Media]--]
+
+PPL: Elena1 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Fraude] con gravedad: [Alta]--]
+
+PPL: Juan2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--]
+
+PPL: Maria2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Alta]--, --[Fraude] con gravedad: [Media]--]
+
+PPL: Pedro2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1000 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--]
+
+PPL: Luisa2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Estafa] con gravedad: [Baja]--, --[Hurto] con gravedad: [Media]--]
+
+PPL: Carlos2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Ana2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Media]--]
+
+PPL: Miguel2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Sofia2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--, --[Estafa] con gravedad: [Baja]--]
+
+PPL: Jorge2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Baja]--, --[Robo] con gravedad: [Media]--]
+
+PPL: Elena2 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Fraude] con gravedad: [Alta]--]
+
+PPL: Juan3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--]
+
+PPL: Maria3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Alta]--, --[Fraude] con gravedad: [Media]--]
+
+PPL: Pedro3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1000 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--]
+
+PPL: Luisa3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Estafa] con gravedad: [Baja]--, --[Hurto] con gravedad: [Media]--]
+
+PPL: Carlos3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Ana3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Media]--]
+
+PPL: Miguel3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Sofia3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--, --[Estafa] con gravedad: [Baja]--]
+
+PPL: Jorge3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Baja]--, --[Robo] con gravedad: [Media]--]
+
+PPL: Elena3 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Fraude] con gravedad: [Alta]--]
+
+PPL: Juan4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--]
+
+PPL: Maria4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Alta]--, --[Fraude] con gravedad: [Media]--]
+
+PPL: Pedro4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1000 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--]
+
+PPL: Luisa4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Estafa] con gravedad: [Baja]--, --[Hurto] con gravedad: [Media]--]
+
+PPL: Carlos4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Ana4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Media]--]
+
+PPL: Miguel4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Sofia4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--, --[Estafa] con gravedad: [Baja]--]
+
+PPL: Jorge4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Baja]--, --[Robo] con gravedad: [Media]--]
+
+PPL: Elena4 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Fraude] con gravedad: [Alta]--]
+
+PPL: Maria5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Alta]--, --[Fraude] con gravedad: [Media]--]
+
+PPL: Pedro5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1000 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--]
+
+PPL: Luisa5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Estafa] con gravedad: [Baja]--, --[Hurto] con gravedad: [Media]--]
+
+PPL: Carlos5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Ana5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 365 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Media]--]
+
+PPL: Miguel5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1365 dias y derecho a 3 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Media]--, --[Robo] con gravedad: [Alta]--]
+
+PPL: Sofia5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Asalto] con gravedad: [Alta]--, --[Estafa] con gravedad: [Baja]--]
+
+PPL: Jorge5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 465 dias y derecho a 5 dias de visita permitidos. Tiene los delitos de: [--[Vandalismo] con gravedad: [Baja]--, --[Robo] con gravedad: [Media]--]
+
+PPL: Elena5 ingresó en: 2024-06-04T23:18:28.936777500 tiene condena de: 1100 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Fraude] con gravedad: [Alta]--]
+

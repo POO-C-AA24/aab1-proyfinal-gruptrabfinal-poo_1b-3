@@ -52,6 +52,7 @@ public class PPLDatabase {
             for(PPL ppl : arregloPPL){
                 writer.write(ppl.toString());
                 writer.newLine();
+                writer.newLine();
             }
             writer.close();
             return true;
