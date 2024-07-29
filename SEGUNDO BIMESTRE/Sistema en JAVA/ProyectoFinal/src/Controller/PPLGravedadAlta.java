@@ -1,4 +1,3 @@
-
 package Controller;
 
 import java.io.Serializable;
@@ -9,10 +8,11 @@ import java.util.ArrayList;
  *
  * @author Carlos Sánchez & Cody
  */
-public class PPLGravedadAlta extends PPL implements Serializable{
-    
+public class PPLGravedadAlta extends PPL implements Serializable {
+
     double probabilidadCondenaMuerte;
     boolean ejecutado;
+
     public PPLGravedadAlta(String nombre, ArrayList<Delito> delitos, LocalDateTime fechaIngreso) {
         super(nombre, delitos, fechaIngreso);
         probabilidadCondenaMuerte = 0;
@@ -21,21 +21,19 @@ public class PPLGravedadAlta extends PPL implements Serializable{
 
     @Override
     public String aplicarCastigo(int gravedad) {
-         switch (gravedad) {
+        switch (gravedad) {
             case 1 -> {
                 diasCondena += 300;
-                aplicarProbabilidadCondenaMuerte(1.5);
-                return "Se agregaron 300 días de condena";
+                return "Se agregaron 300 días de condena y " + aplicarProbabilidadCondenaMuerte(1.5);
             }
             case 2 -> {
                 diasCondena += 1000;
-                        aplicarProbabilidadCondenaMuerte(10);
-                return "Se agregaron 1000 días de condena";
+                
+                return "Se agregaron 1000 días de condena y " + aplicarProbabilidadCondenaMuerte(10);  
             }
             case 3 -> {
                 diasCondena += 2000;
-                        aplicarProbabilidadCondenaMuerte(30);
-                return "Se agregaron 2000 días de condena";
+                return "Se agregaron 2000 días de condena y " + aplicarProbabilidadCondenaMuerte(30);
 
             }
             default -> {
@@ -43,26 +41,25 @@ public class PPLGravedadAlta extends PPL implements Serializable{
             }
 
         }
-         
-         
+
     }
-    
-    public String aplicarProbabilidadCondenaMuerte(double probabilidad){
-        probabilidadCondenaMuerte = (probabilidadCondenaMuerte+probabilidad > 100) ? 100 : probabilidadCondenaMuerte+probabilidad;
-        
-        if(probabilidadCondenaMuerte + probabilidad >= 100){
+
+    public String aplicarProbabilidadCondenaMuerte(double probabilidad) {
+        probabilidadCondenaMuerte = (probabilidadCondenaMuerte + probabilidad > 100) ? 100 : probabilidadCondenaMuerte + probabilidad;
+
+        if (probabilidadCondenaMuerte >= 100) {
             probabilidadCondenaMuerte = 100;
             ejecutado = true;
             return nombre + " fue ejecutado debido a las decisiones tomadas durante el transcurso de los hechos";
         }
-        probabilidadCondenaMuerte += probabilidad;
-        return nombre + " tiene ahora un " + probabilidadCondenaMuerte + " de ser ejecutado.";
+     
+        return nombre + " tiene ahora un " + probabilidadCondenaMuerte + "% probabilidad de ser ejecutado.";
     }
-    
-     @Override
+
+    @Override
     public String toString() {
-        String estado = (ejecutado) ? "ESTE PRESO FUE EJECUTADO" : "ESTE PRESO SE ENCUENTRA CON VIDA";
-        return "PPL: " + nombre + " ingresó en: " + fechaIngreso + " tiene condena de: " + diasCondena + " dias. " + estado +  ". NO TIENE DERECHO A VISITAS. DELITOS:" + delitos.toString();
+        String estado = (ejecutado) ? "ESTE PRESO FUE EJECUTADO" : "ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA";
+        return "(GRAVEDAD ALTA) -> PPL: " + nombre + " ingresó en: " + fechaIngreso + " tiene condena de: " + diasCondena + " dias. " + estado + ". NO TIENE DERECHO A VISITAS. DELITOS:" + delitos.toString();
     }
-    
+
 }

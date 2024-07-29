@@ -18,10 +18,10 @@ public class Ejecucion {
 
     public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
         LocalDateTime fechaActual = LocalDateTime.now(); //Permite obtener la fecha y hora actual para diferentes propósitos
         PPLController controlador = new PPLController(); //Puente para acceder a la base de datos del programa.
 
-        Scanner sc = new Scanner(System.in);
         ArrayList<PPLGravedadAlta> listaPPLAlta = controlador.leerPPLGravedadAlta();
         ArrayList<PPLGravedadBaja> listaPPLBaja = controlador.leerPPLGravedadBaja();
 
@@ -113,10 +113,9 @@ public class Ejecucion {
             String nombre = sc.nextLine();
 
             System.out.println("Ingrese el tipo de PPL: ");
-            System.out.println("1. PRESO LIBERTAD CATEGORÍA ALTA\t2. PRESO LIBERTAD CATEGORÍA LEVE");
+            System.out.print("1. PRESO LIBERTAD CATEGORÍA ALTA\t2. PRESO LIBERTAD CATEGORÍA LEVE: ");
             int tipoPPL = validarTipoPPL(sc);
 
-            
             System.out.print("Ingrese el numero de delitos cometidos por el PPL " + nombre + ": ");
             int numeroDelitos = sc.nextInt();
             sc.nextLine();
@@ -142,9 +141,17 @@ public class Ejecucion {
 
             }
 
-            PPL nuevoPPL = new PPL(nombre, delitos, fechaActual);
-            listaPPL.add(nuevoPPL);
-            controlador.escribirPPL(listaPPL); //Actualizar base de datos
+            PPL nuevoPPL;
+            if (tipoPPL == 1) {
+                nuevoPPL = new PPLGravedadAlta(nombre, delitos, fechaActual);
+                listaPPL.add(nuevoPPL);
+                controlador.escribirPPLGravedadAlta(listaPPL);
+            } else {
+                nuevoPPL = new PPLGravedadBaja(nombre, delitos, fechaActual);
+                listaPPL.add(nuevoPPL);
+                controlador.escribirPPLGravedadBaja(listaPPL);
+            }
+
             System.out.println("PPL AGREGADO");
 
         } catch (InputMismatchException e) {
@@ -170,8 +177,16 @@ public class Ejecucion {
                 }
 
                 listaPPL.remove(pplModificar);
+
+                //Modificar el archivo correspondiente dependiendo si es de categoría grave o leve
+                if (pplModificar instanceof PPLGravedadAlta) {
+                    controlador.escribirPPLGravedadAlta(listaPPL);
+                } else {
+                    controlador.escribirPPLGravedadBaja(listaPPL);
+                }
+
                 System.out.println("Preso eliminado de la base de datos");
-                controlador.escribirPPL(listaPPL); //Actualizar base de datos.
+
             } else {
                 System.out.println("EL PRESO NO EXISTE");
             }
@@ -189,12 +204,14 @@ public class Ejecucion {
             do {
                 System.out.println("-------------------------------------------");
                 System.out.println("[1]. Buscar lista de PPL por numero de delitos");
-                System.out.println("[2]. Buscar lista de PPL por tipo de gravedad");
-                System.out.println("[3]. Buscar lista de PPL por delito");
+                System.out.println("[2]. Buscar lista de PPL con x delito por tipo de gravedad");
+                System.out.println("[3]. Buscar lista de PPL por x delito");
                 System.out.println("[4]. Buscar lista de PPL por dias de visita permitidos");
                 System.out.println("[5]. Buscar lista de PPL que superen x días de condena");
                 System.out.println("[6]. Buscar PPL por nombre");
                 System.out.println("[7]. Imprimir numero de delitos totales cometidos por los PPL");
+                System.out.println("[8]. Buscar lista de PPL de GRAVEDAD ALTA");
+                System.out.println("[9]. Buscar lista de PPL de GRAVEDAD BAJA");
                 System.out.println("[0]. Salir ");
                 System.out.println("--------------------------------------------------");
                 opcion = sc.nextInt();
@@ -243,6 +260,12 @@ public class Ejecucion {
                         int delitosTotales = controlador.buscador(listaPPL).getDelitosTotales();
                         System.out.println("Delitos totales para los PPL actuales: " + delitosTotales);
                     }
+                    case 8 -> {
+                        mostrarListaPPL(controlador.buscador(listaPPL).getPresosGravedadAlta());
+                    }
+                    case 9 -> {
+                        mostrarListaPPL(controlador.buscador(listaPPL).getPresosGravedadBaja());
+                    }
 
                 }
 
@@ -280,7 +303,13 @@ public class Ejecucion {
                     String gravedad = validarGravedad(sc);
 
                     pplModificar.agregarDelito(new Delito(delito, gravedad));
-                    controlador.escribirPPL(listaPPL); //Actualizar la database ya que se modificaron datos
+
+                    //Actualizar la database ya que se modificaron datos
+                    if (pplModificar instanceof PPLGravedadAlta) {
+                        controlador.escribirPPLGravedadAlta(listaPPL);
+                    } else {
+                        controlador.escribirPPLGravedadBaja(listaPPL);
+                    }
                     System.out.println("Delito agregado al PPL: " + pplModificar.getNombre());
                     return;
                 }
@@ -290,8 +319,13 @@ public class Ejecucion {
                     String delito = sc.nextLine().trim();
 
                     System.out.println(pplModificar.eliminarDelito(delito));
-                    controlador.escribirPPL(listaPPL); //Actualizar la database ya que se modificaron datos
 
+                    //Actualizar la database ya que se modificaron datos
+                    if (pplModificar instanceof PPLGravedadAlta) {
+                        controlador.escribirPPLGravedadAlta(listaPPL);
+                    } else {
+                        controlador.escribirPPLGravedadBaja(listaPPL);
+                    }
                     return;
                 }
 
@@ -331,7 +365,13 @@ public class Ejecucion {
                     sc.nextLine();
                 }
                 System.out.println(pplModificar.aplicarCastigo(opcion));
-                controlador.escribirPPL(listaPPL); //Actualizar la lista PPL
+
+                //Actualizar la database ya que se modificaron datos
+                if (pplModificar instanceof PPLGravedadAlta) {
+                    controlador.escribirPPLGravedadAlta(listaPPL);
+                } else {
+                    controlador.escribirPPLGravedadBaja(listaPPL);
+                }
                 return;
             }
 

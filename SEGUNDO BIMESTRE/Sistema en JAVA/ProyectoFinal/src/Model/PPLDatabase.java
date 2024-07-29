@@ -27,10 +27,20 @@ public class PPLDatabase {
     
 
 
-    public boolean escribirPPLGrave(ArrayList<PPLGravedadAlta> arregloPPL) {
+    public boolean escribirPPLGrave(ArrayList<PPL> arregloPPL) {
         try {
+            ArrayList<PPLGravedadAlta> arrayPPLGrave = new ArrayList<>();
+            
+            //Filtrar PPL's de categoría grave
+            for(PPL ppl : arregloPPL){
+                if(ppl instanceof PPLGravedadAlta){
+                    arrayPPLGrave.add((PPLGravedadAlta) ppl);
+                }
+            }
+            
+            
             ObjectOutputStream escritor = new ObjectOutputStream(new FileOutputStream(RUTA_PPL_GRAVE));
-            escritor.writeObject(arregloPPL);
+            escritor.writeObject(arrayPPLGrave);
             escritor.close();
             return true;
         } catch (IOException e) {
@@ -39,10 +49,21 @@ public class PPLDatabase {
         }
     }
     
-    public boolean escribirPPLLeve(ArrayList<PPLGravedadBaja> arregloPPL) {
+    public boolean escribirPPLLeve(ArrayList<PPL> arregloPPL) {
         try {
+              ArrayList<PPLGravedadBaja> arrayPPLBaja = new ArrayList<>();
+            
+            //Filtrar PPL's de categoría leve
+            for(PPL ppl : arregloPPL){
+                if(ppl instanceof PPLGravedadBaja){
+                    arrayPPLBaja.add((PPLGravedadBaja) ppl);
+                }
+            }
+            
+            
+            
             ObjectOutputStream escritor = new ObjectOutputStream(new FileOutputStream(RUTA_PPL_LEVE));
-            escritor.writeObject(arregloPPL);
+            escritor.writeObject(arrayPPLBaja);
             escritor.close();
             return true;
         } catch (IOException e) {
@@ -61,7 +82,7 @@ public class PPLDatabase {
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("ERROR AL LEER " + e);
             System.out.println("CREANDO UN ARCHIVO .dat vacío");
-            escribirPPLGrave(new ArrayList<PPLGravedadAlta>());
+            escribirPPLGrave(new ArrayList<>());
             return new ArrayList<PPLGravedadAlta>();
         }
     }
@@ -76,7 +97,7 @@ public class PPLDatabase {
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("ERROR AL LEER " + e);
             System.out.println("CREANDO UN ARCHIVO .dat vacío");
-            escribirPPLLeve(new ArrayList<PPLGravedadBaja>());
+            escribirPPLLeve(new ArrayList<PPL>());
             return new ArrayList<PPLGravedadBaja>();
         }
     }

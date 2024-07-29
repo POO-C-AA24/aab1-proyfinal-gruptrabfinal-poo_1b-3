@@ -41,11 +41,11 @@ public class PPLController {
         return database.leerPPLLeve();
     }
     
-     public boolean escribirPPLGravedadAlta(ArrayList<PPLGravedadAlta> ppl){
+     public boolean escribirPPLGravedadAlta(ArrayList<PPL> ppl){
         return database.escribirPPLGrave(ppl);
     }
      
-       public boolean escribirPPLGravedadBaja(ArrayList<PPLGravedadBaja> ppl){
+       public boolean escribirPPLGravedadBaja(ArrayList<PPL> ppl){
         return database.escribirPPLLeve(ppl);
     }
      
@@ -55,8 +55,8 @@ public class PPLController {
          return database.escribirTXT(ppl);
      }
      
-     public EstadisticasPPL buscador(ArrayList<PPLGravedadAlta> pplAlta, ArrayList<PPLGravedadBaja> pplBaja){
-         return new EstadisticasPPL(pplAlta, pplBaja);
+     public EstadisticasPPL buscador(ArrayList<PPL> ppl){
+         return new EstadisticasPPL(ppl);
      }
     
     

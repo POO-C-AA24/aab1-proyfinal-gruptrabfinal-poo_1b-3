@@ -51,7 +51,7 @@ public class PPLGravedadBaja extends PPL implements Serializable{
     
      @Override
     public String toString() {
-        return "PPL: " + nombre + " ingresó en: " + fechaIngreso + " tiene condena de: " + diasCondena + " dias y derecho a " + diasVisitaPermitidos + " dias de visita permitidos. Tiene los delitos de: " + delitos.toString();
+        return "(GRAVEDAD LEVE) -> PPL: " + nombre + " ingresó en: " + fechaIngreso + " tiene condena de: " + diasCondena + " dias y derecho a " + diasVisitaPermitidos + " dias de visita permitidos. Tiene los delitos de: " + delitos.toString();
     }
 
     public int getDiasVisitaPermitidos() {

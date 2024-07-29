@@ -1,6 +1,5 @@
 package Controller;
 
-
 import java.util.ArrayList;
 
 /**
@@ -13,14 +12,51 @@ Clase que devuelve las estadísticas de los PPL en base a cualquier metodo y los
  */
 public class EstadisticasPPL {
 
-    private ArrayList<PPLGravedadAlta> arrayPPLAlta;
-    private ArrayList<PPLGravedadBaja> arrayPPLBaja;
-    private ArrayList<PPL> arrayPPL; //PPL de ambos tipos se unirán en este arreglo. Se lo usará cuando en la búsqueda compartan algo en común
-    public EstadisticasPPL(ArrayList<PPLGravedadAlta> pplAlta, ArrayList<PPLGravedadBaja> pplBaja) {
-        this.arrayPPLAlta = pplAlta;
-        this.arrayPPLBaja = pplBaja;
-        arrayPPL.addAll(arrayPPLAlta);
-        arrayPPL.addAll(arrayPPLBaja);
+    private final ArrayList<PPL> arrayPPL; 
+    
+    private final ArrayList<PPLGravedadAlta> arrayPPLAlta = new ArrayList<>();
+    private final ArrayList<PPLGravedadBaja> arrayPPLBaja = new ArrayList<>();
+
+    public EstadisticasPPL(ArrayList<PPL> arrayPPL) {
+        this.arrayPPL = arrayPPL;
+
+        //RELLENAR LOS ARREGLOS DEPENDIENDO DEL TIPO DE PPL AL QUE PERTENEZCAN
+        for (PPL ppl : arrayPPL) {
+            if (ppl instanceof PPLGravedadAlta) {
+                arrayPPLAlta.add((PPLGravedadAlta) ppl);
+            } else if (ppl instanceof PPLGravedadBaja) {
+                arrayPPLBaja.add((PPLGravedadBaja) ppl);
+            }
+        }
+    }
+    
+    
+    /*
+    Devuelve los PPL que pertenezcan a la categoría gravedad alta
+    */
+    
+    public ArrayList<PPL> getPresosGravedadAlta(){
+        ArrayList<PPL> resultadosPPL = new ArrayList<>();
+        
+           for (PPL ppl : arrayPPL) {
+            if(ppl instanceof PPLGravedadAlta) resultadosPPL.add(ppl);
+        }
+           
+           return resultadosPPL;
+    }
+    
+        /*
+    Devuelve los PPL que pertenezcan a la categoría gravedad baja
+    */
+    
+    public ArrayList<PPL> getPresosGravedadBaja(){
+        ArrayList<PPL> resultadosPPL = new ArrayList<>();
+        
+           for (PPL ppl : arrayPPL) {
+            if(ppl instanceof PPLGravedadBaja) resultadosPPL.add(ppl);
+        }
+           
+           return resultadosPPL;
     }
 
     /*
@@ -28,14 +64,13 @@ public class EstadisticasPPL {
      */
     public ArrayList<PPL> getPresosPorNumeroDelito(int n) {
         ArrayList<PPL> resultadosPPL = new ArrayList<>();
- 
-          for (PPL ppl : arrayPPL) {
+
+        for (PPL ppl : arrayPPL) {
             if (ppl.getDelitos().size() == n) {
                 resultadosPPL.add(ppl);
             }
         }
-        
-        
+
         return resultadosPPL;
     }
 
@@ -56,7 +91,7 @@ public class EstadisticasPPL {
 
             }
         }
-        
+
         return resultadosPPL;
     }
 
@@ -83,8 +118,8 @@ public class EstadisticasPPL {
     /*
      Devuelve la cantidad de presos que tengan n numero de visitas permitidas (0 - 7)
      */
-    public ArrayList<PPLGravedadBaja> getPresosPorNumeroVisitas(int visitasSemanales) {
-        ArrayList<PPLGravedadBaja> resultadosPPL = new ArrayList<>();
+    public ArrayList<PPL> getPresosPorNumeroVisitas(int visitasSemanales) {
+        ArrayList<PPL> resultadosPPL = new ArrayList<>();
 
         for (PPLGravedadBaja ppl : arrayPPLBaja) {
             if (ppl.getDiasVisitaPermitidos() == visitasSemanales) {
@@ -118,7 +153,7 @@ public class EstadisticasPPL {
         for (PPL ppl : arrayPPL) {
 
             if (ppl.getNombre().equalsIgnoreCase(nombrePPL)) {
-                   resultadosPPL.add(ppl);
+                resultadosPPL.add(ppl);
             }
         }
         return resultadosPPL;
@@ -137,17 +172,21 @@ public class EstadisticasPPL {
         }
         return delitos;
     }
+
     /*
     Devuelve el numero de PPLs los cuales fueron ejecutados. 
     SOLO APLICA A PPL's QUE SEAN DE GRAVEDAD ALTA
-    */
-    
-    public ArrayList<PPLGravedadAlta> getPresosEjecutados(){
-        ArrayList<PPLGravedadAlta> resultadosPPL = new ArrayList<>();
-        for(PPLGravedadAlta ppl : arrayPPLAlta){
-            if(ppl.ejecutado) resultadosPPL.add(ppl);
+     */
+
+    public ArrayList<PPL> getPresosEjecutados() {
+        ArrayList<PPL> resultadosPPL = new ArrayList<>();
+
+        for (PPLGravedadAlta ppl : arrayPPLAlta) {
+            if (ppl.ejecutado) {
+                resultadosPPL.add(ppl);
+            }
         }
-        
+
         return resultadosPPL;
     }
 

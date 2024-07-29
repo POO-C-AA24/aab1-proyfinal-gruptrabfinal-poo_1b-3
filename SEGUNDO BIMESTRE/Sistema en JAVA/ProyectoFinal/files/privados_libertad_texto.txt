@@ -1,2 +1,102 @@
-PPL: Carlos ingresó en: 2024-07-28T18:00:56.166762900 tiene condena de: 1200 dias y derecho a 4 dias de visita permitidos. Tiene los delitos de: [--[Robo] con gravedad: [Media]--, --[Asalto] con gravedad: [Alta]--]
+(GRAVEDAD ALTA) -> PPL: Juan ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Pedro ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Luis ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Carlos ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Miguel ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Jorge ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Fernando ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Raúl ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Alejandro ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Andrés ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Ricardo ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Eduardo ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Javier ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Santiago ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Antonio ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Francisco ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Daniel ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Roberto ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Manuel ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Alberto ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Hernán ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Marcos ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Robo a mano armada] con gravedad: [Alta]--, --[Tráfico de drogas] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Diego ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Gustavo ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Secuestro] con gravedad: [Alta]--, --[Extorsión] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Victor ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1600 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asalto] con gravedad: [Alta]--, --[Homicidio] con gravedad: [Alta]--]
+
+(GRAVEDAD ALTA) -> PPL: Oscar ingresó en: 2024-07-29T12:11:37.733828300 tiene condena de: 800 dias. ESTE PRESO SE ENCUENTRA CUMPLIENDO SU CONDENA. NO TIENE DERECHO A VISITAS. DELITOS:[--[Asesinato] con gravedad: [Alta]--]
+
+(GRAVEDAD LEVE) -> PPL: Jose ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Ramón ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Tomás ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Pablo ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Raúl ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Alfredo ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Martin ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Fabio ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Ezequiel ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: David ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Gonzalo ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Juan Carlos ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Felipe ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Ignacio ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Mauricio ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Joaquín ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Maximiliano ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Esteban ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Emilio ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Rodrigo ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Cristian ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Héctor ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Fraude] con gravedad: [Baja]--, --[Injuria] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Gabriel ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Oscar ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 1300 dias y derecho a 0 dias de visita permitidos. Tiene los delitos de: [--[Conducción imprudente] con gravedad: [Baja]--, --[Daño a la propiedad] con gravedad: [Baja]--]
+
+(GRAVEDAD LEVE) -> PPL: Sebastián ingresó en: 2024-07-29T12:09:59.268017800 tiene condena de: 300 dias y derecho a 6 dias de visita permitidos. Tiene los delitos de: [--[Hurto] con gravedad: [Baja]--, --[Vandalismo] con gravedad: [Baja]--]
 

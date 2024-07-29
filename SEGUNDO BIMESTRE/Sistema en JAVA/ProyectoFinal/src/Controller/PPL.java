@@ -75,9 +75,7 @@ public abstract class PPL implements Serializable {
 
     /*
     Los castigos se aplican de acuerdo a su nivel de gravedad:
-    Gravedad 1: Nivel bajo, se resta 1 día de visita por semana y se agregan +30 dias de condena.
-    Gravedad 2: Nivel moderado, se restan 3 días de visita por semana y se agregan + 365 dias de condena
-    Gravedad 3: Nivel alto, se le prohiben los días de visita totales y se agregan +1000 días de condena
+    ESTOS SE APLICARÁN DE FORMA ESPECIALIZADA DEPENDIENDO SI SE TIENE QUE SOBREESCRIBIR EN UN PPLGravedadAlta o PPLGravedadLeve
      */
     public abstract String aplicarCastigo(int gravedad);
        
