@@ -13,10 +13,14 @@ Clase que devuelve las estadísticas de los PPL en base a cualquier metodo y los
  */
 public class EstadisticasPPL {
 
-    private ArrayList<PPL> arrayPPL;
-
-    public EstadisticasPPL(ArrayList<PPL> ppl) {
-        this.arrayPPL = ppl;
+    private ArrayList<PPLGravedadAlta> arrayPPLAlta;
+    private ArrayList<PPLGravedadBaja> arrayPPLBaja;
+    private ArrayList<PPL> arrayPPL; //PPL de ambos tipos se unirán en este arreglo. Se lo usará cuando en la búsqueda compartan algo en común
+    public EstadisticasPPL(ArrayList<PPLGravedadAlta> pplAlta, ArrayList<PPLGravedadBaja> pplBaja) {
+        this.arrayPPLAlta = pplAlta;
+        this.arrayPPLBaja = pplBaja;
+        arrayPPL.addAll(arrayPPLAlta);
+        arrayPPL.addAll(arrayPPLBaja);
     }
 
     /*
@@ -24,12 +28,14 @@ public class EstadisticasPPL {
      */
     public ArrayList<PPL> getPresosPorNumeroDelito(int n) {
         ArrayList<PPL> resultadosPPL = new ArrayList<>();
-
-        for (PPL ppl : arrayPPL) {
+ 
+          for (PPL ppl : arrayPPL) {
             if (ppl.getDelitos().size() == n) {
                 resultadosPPL.add(ppl);
             }
         }
+        
+        
         return resultadosPPL;
     }
 
@@ -50,6 +56,7 @@ public class EstadisticasPPL {
 
             }
         }
+        
         return resultadosPPL;
     }
 
@@ -76,10 +83,10 @@ public class EstadisticasPPL {
     /*
      Devuelve la cantidad de presos que tengan n numero de visitas permitidas (0 - 7)
      */
-    public ArrayList<PPL> getPresosPorNumeroVisitas(int visitasSemanales) {
-        ArrayList<PPL> resultadosPPL = new ArrayList<>();
+    public ArrayList<PPLGravedadBaja> getPresosPorNumeroVisitas(int visitasSemanales) {
+        ArrayList<PPLGravedadBaja> resultadosPPL = new ArrayList<>();
 
-        for (PPL ppl : arrayPPL) {
+        for (PPLGravedadBaja ppl : arrayPPLBaja) {
             if (ppl.getDiasVisitaPermitidos() == visitasSemanales) {
                 resultadosPPL.add(ppl);
             }
@@ -129,6 +136,19 @@ public class EstadisticasPPL {
 
         }
         return delitos;
+    }
+    /*
+    Devuelve el numero de PPLs los cuales fueron ejecutados. 
+    SOLO APLICA A PPL's QUE SEAN DE GRAVEDAD ALTA
+    */
+    
+    public ArrayList<PPLGravedadAlta> getPresosEjecutados(){
+        ArrayList<PPLGravedadAlta> resultadosPPL = new ArrayList<>();
+        for(PPLGravedadAlta ppl : arrayPPLAlta){
+            if(ppl.ejecutado) resultadosPPL.add(ppl);
+        }
+        
+        return resultadosPPL;
     }
 
 }

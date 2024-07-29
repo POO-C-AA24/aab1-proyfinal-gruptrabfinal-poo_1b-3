@@ -33,20 +33,30 @@ public class PPLController {
         return menu;
     }
     
-    public ArrayList<PPL> leerPPL(){
-        return database.leerPPL();
+    public ArrayList<PPLGravedadAlta> leerPPLGravedadAlta(){
+        return database.leerPPLGrave();
     }
     
-     public boolean escribirPPL(ArrayList<PPL> ppl){
-        return database.escribirPPL(ppl);
+    public ArrayList<PPLGravedadBaja> leerPPLGravedadBaja(){
+        return database.leerPPLLeve();
+    }
+    
+     public boolean escribirPPLGravedadAlta(ArrayList<PPLGravedadAlta> ppl){
+        return database.escribirPPLGrave(ppl);
     }
      
+       public boolean escribirPPLGravedadBaja(ArrayList<PPLGravedadBaja> ppl){
+        return database.escribirPPLLeve(ppl);
+    }
+     
+       
+       
      public boolean escribirTXT(ArrayList<PPL> ppl){
          return database.escribirTXT(ppl);
      }
      
-     public EstadisticasPPL buscador(ArrayList<PPL> ppl){
-         return new EstadisticasPPL(ppl);
+     public EstadisticasPPL buscador(ArrayList<PPLGravedadAlta> pplAlta, ArrayList<PPLGravedadBaja> pplBaja){
+         return new EstadisticasPPL(pplAlta, pplBaja);
      }
     
     

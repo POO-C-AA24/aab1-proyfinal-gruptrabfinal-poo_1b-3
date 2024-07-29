@@ -3,6 +3,8 @@ package View;
 import Controller.PPLController;
 import Controller.Delito;
 import Controller.PPL;
+import Controller.PPLGravedadAlta;
+import Controller.PPLGravedadBaja;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -17,10 +19,15 @@ public class Ejecucion {
     public static void main(String[] args) {
 
         LocalDateTime fechaActual = LocalDateTime.now(); //Permite obtener la fecha y hora actual para diferentes propósitos
-        PPLController controlador = new PPLController(); //Puente para acceder a la basede datos del programa.
+        PPLController controlador = new PPLController(); //Puente para acceder a la base de datos del programa.
 
         Scanner sc = new Scanner(System.in);
-        ArrayList<PPL> listaPPL = controlador.leerPPL();
+        ArrayList<PPLGravedadAlta> listaPPLAlta = controlador.leerPPLGravedadAlta();
+        ArrayList<PPLGravedadBaja> listaPPLBaja = controlador.leerPPLGravedadBaja();
+
+        ArrayList<PPL> listaPPL = new ArrayList<>();
+        listaPPL.addAll(listaPPLAlta);
+        listaPPL.addAll(listaPPLBaja);
 
         System.out.println("---Bienvenido al sistema de control de personas privadas de libertad (PPL)---");
         int opcionPrincipal;
@@ -72,6 +79,10 @@ public class Ejecucion {
         }
     }
 
+    /*
+    ESTE METODO MOSTRARÁ SI UN PPL PERTENECE A LA CATEGORÍA GRAVE O LEVE. 
+    FUNCIONA TAMBIÉN PARA PPL'S GENERALES QUE NO TIENEN ASIGNADA UNA CATEGORÍA ESPECÍFICA
+     */
     private static void mostrarListaPPL(ArrayList<PPL> listaPPL) {
 
         if (listaPPL.isEmpty()) {
@@ -80,8 +91,17 @@ public class Ejecucion {
         }
 
         int contador = 1;
+
         for (PPL ppl : listaPPL) {
-            System.out.println("[" + contador + "] -> " + ppl + "\n");
+
+            if (ppl instanceof PPLGravedadAlta) {
+                System.out.println("[" + contador + "] -> " + (PPLGravedadAlta) ppl + "\n");
+            } else if (ppl instanceof PPLGravedadBaja) {
+                System.out.println("[" + contador + "] -> " + (PPLGravedadBaja) ppl + "\n");
+            } else {
+                System.out.println("[" + contador + "] -> " + ppl + "\n");
+            }
+
             contador++;
         }
 
@@ -91,6 +111,12 @@ public class Ejecucion {
         try {
             System.out.print("Ingrese nombre del PPL: ");
             String nombre = sc.nextLine();
+
+            System.out.println("Ingrese el tipo de PPL: ");
+            System.out.println("1. PRESO LIBERTAD CATEGORÍA ALTA\t2. PRESO LIBERTAD CATEGORÍA LEVE");
+            int tipoPPL = validarTipoPPL(sc);
+
+            
             System.out.print("Ingrese el numero de delitos cometidos por el PPL " + nombre + ": ");
             int numeroDelitos = sc.nextInt();
             sc.nextLine();
@@ -298,7 +324,7 @@ public class Ejecucion {
                 System.out.println("3. Aplicar castigo ALTO");
                 int opcion = sc.nextInt();
                 sc.nextLine();
-                
+
                 while (opcion != 1 && opcion != 2 && opcion != 3) { //Forzar al usuario a elegir un castigo válido
                     System.out.print("Ingrese un castigo válido: ");
                     opcion = sc.nextInt();
@@ -339,6 +365,18 @@ public class Ejecucion {
         }
 
         return gravedad;
+    }
+
+    private static int validarTipoPPL(Scanner sc) {
+        int tipoPPL = sc.nextInt();
+        sc.nextLine();
+
+        while (tipoPPL != 1 && tipoPPL != 2) {
+            System.out.println("Ingrese un tipo de PPL correcto");
+            tipoPPL = sc.nextInt();
+            sc.nextLine();
+        }
+        return tipoPPL;
     }
 
     //Permite seleccionar un PPL especifico dada una lista de PPL.
